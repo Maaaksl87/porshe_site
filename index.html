@@ -1,0 +1,100 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <title>Porsche</title> 
+    <style> 
+        /* Стилі для блоку навігації */ 
+        nav { 
+            background-color: #333; /* Колір фону блока навігації */ 
+            color: #fff; /* Колір тексту в навігації */ 
+            padding: 10px; /* Внутрішні відступи для блока навігації */ 
+        } 
+ 
+        ul { 
+            list-style-type: none; /* Відключаємо маркери списку */ 
+            padding: 0; 
+            display: flex; /* Зробити список горизонтальним */ 
+        } 
+ 
+        li { 
+            margin-right: 20px; /* Відступи між пунктами навігації */ 
+        } 
+ 
+        a { 
+            text-decoration: none; /* Відключаємо підкреслення для посилань */ 
+            color: #fff; /* Колір тексту посилань */ 
+            background-color: #333; /* Колір фону пункта меню за замовчуванням */ 
+            padding: 5px 10px; /* Відступи для пунктів меню */ 
+            border-radius: 5px; /* Округлені кути для пунктів меню */ 
+            transition: background-color 0.3s; /* Плавна зміна кольору фону при наведенні */ 
+        } 
+ 
+        a:hover { 
+            background-color: #555; /* Колір фону при наведенні миші */ 
+        } 
+ 
+        a:active { 
+            background-color: #777; /* Колір фону при натисканні */ 
+        } 
+        td { 
+            background-color: aquamarine; 
+        } 
+        .name { 
+            color: darkblue; 
+            font-size: 25px; 
+        } 
+    </style> 
+</head> 
+<body> 
+    <nav> 
+        <ul> 
+            <li><a href="#models">Моделі</a></li> 
+            <li><a href="#characteristics">Характеристики</a></li> 
+            <li><a href="#media">Зображення та відео</a></li> 
+        </ul> 
+    </nav> 
+ 
+    <h1>Porsche</h1> 
+ 
+    <h2 id="models">Моделі:</h2> 
+    <ul class="name"> 
+        <li>Porsche Panamera</li> 
+        <li>Porsche Cayenne</li> 
+        <li>Porsche 911 turbo s</li> 
+    </ul> 
+ 
+    <!-- Характеристики з класом "characteristic" --> 
+    <div class="characteristic"> 
+        <h2 id="characteristics">Характеристики:</h2> 
+        <table border="1"> 
+            <tr> 
+                <td>Porsche Panamera</td> 
+                <td>Porsche Cayenne</td> 
+                <td>Porsche 911 turbo s</td> 
+            </tr> 
+            <tr> 
+                <td>2.5-21.8 л/100 км</td> 
+                <td>1.5-22.6 л/100 км</td> 
+                <td>7.4 до 22.8/100 км</td> 
+            </tr> 
+            <tr> 
+                <td>Макс.швид-315 км/ч.</td> 
+                <td>Макс.швид-245 км/ч.</td> 
+                <td>Макс.швид-330 км/ч.</td> 
+            </tr> 
+        </table> 
+    </div> 
+ 
+    <h2 id="media">Зображення та відео:</h2> 
+     
+    <!-- Зображення з класом "media" --> 
+    <div class="media"> 
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/2019_Porsche_Panamera_4_E-Hybrid_Sport_Turismo_2.9_Front.jpg/800px-2019_Porsche_Panamera_4_E-Hybrid_Sport_Turismo_2.9_Front.jpg" alt="Зображення"> 
+    </div> 
+     
+    <!-- Відео з класом "media" --> 
+    <div class="media"> 
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/d5H1HY9LJ8c" frameborder="0" allowfullscreen></iframe> 
+    </div> 
+</body> 
+</html>
